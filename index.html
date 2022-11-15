@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Comidas Rapidas XYZ</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="logo.png" alt="" class="logo">
+            </a>
+            <ul>
+                <!-- <li><a class="active" href="#">Inicio</a></li> -->
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <!-- <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Contacto</a></li> -->
+            </ul>
+        </nav>
+    </header><br>
+    <h1>Comidas Rapidas XYZ</h1><br>
+    <h2>Se venden Hamburguesas, perros, salchipapa y pizza.</h2><br>
+    <form action="codigo.php" method="post">
+        <img src="https://us.123rf.com/450wm/tribalium123/tribalium1231304/tribalium123130400081/19317091-r%C3%A1pido-hot-dog-food-pizza-hamburguesa.jpg" alt=""><br>
+        <select name="select">
+            <option selected>Seleccione</option>
+            <option value="Hamburguesa">Hamburguesa</option>
+            <option value="Perro">Perro</option>
+            <option value="Salchipapa">Salchipapapa</option>
+        </select>
+        <br>
+        <br>
+        <label for="nombre">Nombre del Cliente:</label>
+        <input type="text" name="nombre" placeholder="Nombre del Cliente" required>
+        <label for="nombre">Dirección:</label>
+        <input type="text" name="direccion" placeholder="Dirección" required>
+        <label for="nombre">Telefono:</label>
+        <input type="text" name="telefono" placeholder="Telefono" required>
+        <label for="nombre">Correo:</label>
+        <input type="text" name="correo" placeholder="Correo" required>
+        <br><br>
+        <!-- <p>Cualquiera de los comestibles tiene un costode $13.000 con gaseosa, $15000 con jugo,$ 11000 con aguao $10000 sin bebida.</p> -->
+        <input type="radio" name="bebida" value="gaseosa" required>
+        Gaseosa $13.000
+        <input type="radio" name="bebida" value="jugo" required>
+        Jugo $15.000
+        <input type="radio" name="bebida" value="agua" required>
+        Agua o sin bebida $11.000
+        <br><br>
+        <!-- <p>Si el usuario desea puede agregar a su pedido una porción de papas a la francesa por $5000 más en cualquierade los pedidos.</p> -->
+        <input type="checkbox" name="porcion">Agregar papas a la francesa $5.000. <br><br>
+        <!-- <p>Si la compra realizada por el cliente es para enviar a domicilio tiene un sobrecargo de $3500</p> -->
+        <input type="checkbox" name="domicilio">Es domicilio? $3.500.
+        <br><br>
+        <!-- <p>El pago puede ser en efectivo o con tarjeta débito o crédito,si es con tarjeta se genera un incremento adicionald e 3% sobre el total de la compra</p> -->
+        <input type="radio" name="operacion" value="efectivo" required>
+        Efectivo
+        <input type="radio" name="operacion" value="tarjeta" required>
+        Con tarjeta debito o credito se cobra mas el 3% sobre el total de la compra.
+        <br><br>
+        <!-- <p>Al momento depagar se deberá ver en pantalla: nombre, dirección, teléfonocorreo electrónico del cliente, eltotal a pagar discriminando individualmente cuanto es por comida, por bebidas, por domicilio y por impuestos.</p> -->
+        <input id="comprar" type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
