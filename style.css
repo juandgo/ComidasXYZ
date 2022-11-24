@@ -82,11 +82,11 @@ li a:hover {
 
 @media (max-width: 858px) {
     #caja{
-        width: 390px;
+        width: 350px;
         /* height: 450px; */
     }
     #imagen{
-        width: 390px;
+        width: 250px;
     }
     .checkbtn {
         display: block;
